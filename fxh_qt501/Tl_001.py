@@ -31,7 +31,7 @@ class W001(QDialog):
 
     def select_file(self):
         fileName, filetype = QFileDialog.getOpenFileName(self, "选择文件", "/", "All Files (*);;TXT Files (*.txt)") # User 选择路径来找到图片
-        print(fileName, filetype)  # 打印文件全部路径（包括文件名和后缀名）和文件类型
+        # print(fileName, filetype)  # 打印文件全部路径（包括文件名和后缀名）和文件类型
         self.child.t_file.setText(fileName)    #把文件的路径写在 Text 上
 
     def Read_txt(self):
@@ -51,7 +51,8 @@ class W001(QDialog):
             (tempfilename,extension)=os.path.splitext(tempfilename)
             tempfilename=tempfilename+self.get_sysdate()+'.png'
         file=os.path.join(filepath,tempfilename)
-        print(file)
+        self.child.t_aim_file.setText(file)
+        # print(file)
         #以上完成文件名
 
         # 词云都是词语 显示      
@@ -67,15 +68,8 @@ class W001(QDialog):
 
         #把file显示出来
         #显示图片
-        self.child.gv_pic.setPixmap(QPixmap(file))  # 在label上显示图片
-        self.child.gv_pic.setScaledContents (True) # 让图片自适应label大小
-
-
-        
-
-
-
-
+        self.child.lbl_pic.setPixmap(QPixmap(file))  # 在label上显示图片
+        self.child.lbl_pic.setScaledContents (True) # 让图片自适应label大小
 
 if __name__ == "__main__":    
     app = QApplication(sys.argv)

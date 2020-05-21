@@ -75,16 +75,6 @@
     <string>生成词云</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="gv_pic">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>340</y>
-     <width>581</width>
-     <height>241</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QTextEdit" name="te_text">
    <property name="geometry">
     <rect>
@@ -92,6 +82,35 @@
      <y>70</y>
      <width>631</width>
      <height>231</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pic">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>531</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="midLineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="t_aim_file">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>310</y>
+     <width>481</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>
