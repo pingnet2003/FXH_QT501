@@ -1,5 +1,4 @@
 import sys
-import sqlite3
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5 import QtGui, QtCore, QtWidgets
@@ -7,8 +6,8 @@ from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 # 这个 Ui_Tl_Split_Pic01 是ui文件对应的py文件的文件名
-from Ui_Tl_Split_Pic01 import Ui_Form_Split_Pic
-from Fun_Split_Pic9 import *    #调用自编的函数来分割
+from Ui_qt_002 import Ui_Form_Split_Pic
+from F_002 import *    #调用自编的函数来分割
 import os
 import time
 

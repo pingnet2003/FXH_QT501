@@ -6,7 +6,7 @@ from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 # 这个test_pyqt是ui文件对应的py文件的文件名
-from Ui_test02 import Ui_test_form1
+from Ui_qt_D01 import Ui_test_form1
 
 # 我的Form是用的QWidget作为基类
 

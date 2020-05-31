@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Tests...</string>
+   <string>TableGrid显示</string>
   </property>
   <widget class="QPushButton" name="btn_read">
    <property name="geometry">

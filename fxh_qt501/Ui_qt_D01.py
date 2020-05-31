@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\vscode_2020\vstestfxh\fxh_qt501\fxh_qt501\test02.ui'
+# Form implementation generated from reading ui file 'e:\vscode_2020\vstestfxh\fxh_qt501\fxh_qt501\qt_D01.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -29,5 +29,5 @@ class Ui_test_form1(object):
 
     def retranslateUi(self, test_form1):
         _translate = QtCore.QCoreApplication.translate
-        test_form1.setWindowTitle(_translate("test_form1", "Tests..."))
+        test_form1.setWindowTitle(_translate("test_form1", "TableGrid显示"))
         self.btn_read.setText(_translate("test_form1", "Read Data"))

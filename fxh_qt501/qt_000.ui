@@ -39,14 +39,20 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>70</y>
       <width>771</width>
       <height>471</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>自制工具(0)</string>
      </attribute>
      <widget class="QPushButton" name="btn_001">
       <property name="geometry">
@@ -67,8 +73,8 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>50</y>
+        <x>140</x>
+        <y>25</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -77,11 +83,137 @@
        <string>20200521 加入</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>55</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200522 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_002">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200521 加入">20200521 加入</string>
+      </property>
+      <property name="text">
+       <string>002-九宫格</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>85</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200531 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_003">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200521 加入">20200521 加入</string>
+      </property>
+      <property name="text">
+       <string>003-词云</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>爬虫(A)</string>
      </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>25</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200522 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_A01">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200521 加入">20200521 加入</string>
+      </property>
+      <property name="text">
+       <string>A01-baidu图片下载</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>图形(C)</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>数据库相关(D)</string>
+     </attribute>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>24</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200522 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_D01">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200521 加入">20200521 加入</string>
+      </property>
+      <property name="text">
+       <string>D01-TableGrid</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>

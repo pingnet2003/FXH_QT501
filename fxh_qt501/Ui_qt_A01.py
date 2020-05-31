@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\vscode_2020\vstestfxh\fxh_qt501\fxh_qt501\Qt5_baidu_pic1.ui'
+# Form implementation generated from reading ui file 'e:\vscode_2020\vstestfxh\fxh_qt501\fxh_qt501\qt_A01.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
+
 class Ui_Frm_baidu_pic1(object):
     def setupUi(self, Frm_baidu_pic1):
         Frm_baidu_pic1.setObjectName("Frm_baidu_pic1")
@@ -41,12 +44,16 @@ class Ui_Frm_baidu_pic1(object):
         self.btn_download.setGeometry(QtCore.QRect(240, 100, 75, 23))
         self.btn_download.setObjectName("btn_download")
         self.btn_Close = QtWidgets.QPushButton(self.frame)
-        self.btn_Close.setGeometry(QtCore.QRect(320, 100, 75, 23))
+        self.btn_Close.setGeometry(QtCore.QRect(420, 100, 75, 23))
         self.btn_Close.setObjectName("btn_Close")
+        self.btn_open_path = QtWidgets.QPushButton(self.frame)
+        self.btn_open_path.setGeometry(QtCore.QRect(320, 100, 91, 23))
+        self.btn_open_path.setObjectName("btn_open_path")
 
         self.retranslateUi(Frm_baidu_pic1)
         self.btn_Close.clicked.connect(Frm_baidu_pic1.close)
-        # self.btn_select.clicked.connect(Frm_baidu_pic1.sel_directory)        
+        self.btn_select.clicked.connect(Frm_baidu_pic1.sel_directory)
+        self.btn_download.clicked.connect(Frm_baidu_pic1.baidu_dl_pic01)
         QtCore.QMetaObject.connectSlotsByName(Frm_baidu_pic1)
 
     def retranslateUi(self, Frm_baidu_pic1):
@@ -58,3 +65,4 @@ class Ui_Frm_baidu_pic1(object):
         self.label_3.setText(_translate("Frm_baidu_pic1", "图片数量"))
         self.btn_download.setText(_translate("Frm_baidu_pic1", "下载"))
         self.btn_Close.setText(_translate("Frm_baidu_pic1", "退出"))
+        self.btn_open_path.setText(_translate("Frm_baidu_pic1", "打开下载目录"))
