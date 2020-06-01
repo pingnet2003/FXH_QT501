@@ -1,7 +1,6 @@
 import sys
 import time
 import os
-import sqlite3
 from PyQt5.QtWidgets import *
 from PyQt5 import QtGui, QtCore, QtWidgets
 # from PyQt5.QtWidgets import QTableWidget, QProgressBar, QLineEdit, QComboBox, QFrame, QTableWidgetItem
@@ -86,6 +85,7 @@ class W003(QDialog):
             for stop_word in stop_word_list:
                 stop_word = stop_word.replace('\ufeef', '').strip()
                 new_stop_word_list.append(stop_word)
+            fr.close()
         print(new_stop_word_list)  #输出停用词
 
         #取得正文
@@ -102,33 +102,40 @@ class W003(QDialog):
                     word_dict[word] = word_dict[word] + 1
                 else:
                     word_dict[word] = 1
-        fr.close()
+        fr_init.close()
 
-         #按次数进行排序
-        sort_words=sorted(word_dict.items(),key=lambda x:x[1],reverse=True)
-        # print(sort_words[0:101])#输出前0-100的词
-        new_word=''
-        for x in sort_words[0:100]:       
-            new_word=new_word+' '+ x[0]
-        print(new_word)
-
-        # 词云都是词语 显示      
-        if pic_filename=='':
+        #取得高频词
+        if self.child.rb_top.isChecked():
+            #按次数进行排序
+            sort_words=sorted(word_dict.items(),key=lambda x:x[1],reverse=True)
+            # print(sort_words[0:101])#输出前0-100的词
+            new_word=''
+            for x in sort_words[0:50]:       
+                new_word=new_word+' '+ x[0]
+            print(new_word)
+             
+        if pic_filename=='':   # 无背景图 
             w = wordcloud.WordCloud(width=1000,height=700,background_color='white',contour_width=1,font_path="C:/Windows/Fonts/STFANGSO.TTF")
             print('no pic')
-        else:
+        else:   # 有背景图 
             mk = imageio.imread(pic_filename)
             w = wordcloud.WordCloud(width=1000,height=700,background_color='white',mask=mk,contour_width=1,font_path="C:/Windows/Fonts/STFANGSO.TTF")
             print('pic')
  
-        # w.generate(word_list)
-        w.generate(new_word)
-        w.to_file(file)
-
-        #把file显示出来
+        if self.child.rb_all.isChecked():   #按全文
+            w.generate(word_list)
+            # print('Select All')
+        if self.child.rb_top.isChecked():   #按高频词
+            w.generate(new_word)
+            print('Select Top')
+        
+        w.to_file(file)  #保存成图片文件
+        
         #显示图片
         self.child.lbl_pic.setPixmap(QPixmap(file))  # 在label上显示图片
         self.child.lbl_pic.setScaledContents (True) # 让图片自适应label大小
+
+        reply = QMessageBox.information(self, '提示','成功生成词云',QMessageBox.Yes,QMessageBox.Yes)
 
 if __name__ == "__main__":    
     app = QApplication(sys.argv)
