@@ -48,7 +48,7 @@
      <bool>false</bool>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -57,9 +57,9 @@
      <widget class="QPushButton" name="btn_001">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>34</x>
         <y>20</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
@@ -99,9 +99,9 @@
      <widget class="QPushButton" name="btn_002">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>34</x>
         <y>50</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
@@ -128,9 +128,9 @@
      <widget class="QPushButton" name="btn_003">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>34</x>
         <y>80</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
@@ -138,7 +138,7 @@
        <string extracomment="20200521 加入">20200521 加入</string>
       </property>
       <property name="text">
-       <string>003-词云</string>
+       <string>003-词云进阶</string>
       </property>
      </widget>
     </widget>
@@ -173,6 +173,38 @@
       </property>
       <property name="text">
        <string>A01-baidu图片下载</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_A02">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200521 加入">20200521 加入</string>
+      </property>
+      <property name="statusTip">
+       <string>you-get 方式</string>
+      </property>
+      <property name="text">
+       <string>A02-视频下载</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>54</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200602 加入</string>
       </property>
      </widget>
     </widget>

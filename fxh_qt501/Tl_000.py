@@ -1,7 +1,7 @@
 import sys
 from Ui_qt_000  import Ui_MainWindow
 import Tl_001,Tl_002,Tl_003
-import Tl_A01
+import Tl_A01,Tl_A02
 import Tl_D01
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -17,6 +17,7 @@ class w000(QMainWindow):
         self.child.btn_003.clicked.connect(self.call_003)
 
         self.child.btn_A01.clicked.connect(self.call_A01)
+        self.child.btn_A02.clicked.connect(self.call_A02)
 
         self.child.btn_D01.clicked.connect(self.call_D01)
         
@@ -44,6 +45,12 @@ class w000(QMainWindow):
         pass
         self.cwA01 = Tl_A01.c_tl_a01()
         self.cwA01.show()        
+ 
+    #调出 you-get 下载视频 所在的 PY
+    def call_A02(self):
+        pass
+        self.cwA02 = Tl_A02.c_tl_a02()
+        self.cwA02.show()   
 
     #调出数据库 TableGrid 的 PY
     def call_D01(self):
