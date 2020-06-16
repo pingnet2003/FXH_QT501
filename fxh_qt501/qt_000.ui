@@ -48,7 +48,7 @@
      <bool>false</bool>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -273,6 +273,35 @@
       </property>
       <property name="text">
        <string>20200604 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_C02">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>47</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200616 加入">20200616 加入</string>
+      </property>
+      <property name="text">
+       <string>C02-屏幕录制</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>186</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200616 加入</string>
       </property>
      </widget>
     </widget>

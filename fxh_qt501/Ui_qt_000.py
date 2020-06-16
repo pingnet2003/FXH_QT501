@@ -82,6 +82,12 @@ class Ui_MainWindow(object):
         self.label_8 = QtWidgets.QLabel(self.tab_3)
         self.label_8.setGeometry(QtCore.QRect(185, 23, 81, 16))
         self.label_8.setObjectName("label_8")
+        self.btn_C02 = QtWidgets.QPushButton(self.tab_3)
+        self.btn_C02.setGeometry(QtCore.QRect(61, 47, 111, 23))
+        self.btn_C02.setObjectName("btn_C02")
+        self.label_10 = QtWidgets.QLabel(self.tab_3)
+        self.label_10.setGeometry(QtCore.QRect(186, 50, 81, 16))
+        self.label_10.setObjectName("label_10")
         self.tabWidget.addTab(self.tab_3, "")
         self.tab_4 = QtWidgets.QWidget()
         self.tab_4.setObjectName("tab_4")
@@ -102,7 +108,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -134,6 +140,9 @@ class Ui_MainWindow(object):
         self.btn_C01.setToolTip(_translate("MainWindow", "20200604 加入"))
         self.btn_C01.setText(_translate("MainWindow", "C01-图片水印"))
         self.label_8.setText(_translate("MainWindow", "20200604 加入"))
+        self.btn_C02.setToolTip(_translate("MainWindow", "20200616 加入"))
+        self.btn_C02.setText(_translate("MainWindow", "C02-屏幕录制"))
+        self.label_10.setText(_translate("MainWindow", "20200616 加入"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "图形(C)"))
         self.label_5.setText(_translate("MainWindow", "20200522 加入"))
         self.btn_D01.setToolTip(_translate("MainWindow", "20200521 加入"))
