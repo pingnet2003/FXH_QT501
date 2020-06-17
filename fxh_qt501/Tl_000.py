@@ -2,7 +2,7 @@ import sys
 from Ui_qt_000  import Ui_MainWindow
 import Tl_001,Tl_002,Tl_003
 import Tl_A01,Tl_A02
-import Tl_C01,Tl_C02
+import Tl_C01,Tl_C02,Tl_C03,Tl_C04
 import Tl_D01
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -22,6 +22,8 @@ class w000(QMainWindow):
 
         self.child.btn_C01.clicked.connect(self.call_C01)
         self.child.btn_C02.clicked.connect(self.call_C02)
+        self.child.btn_C03.clicked.connect(self.call_C03)
+        self.child.btn_C04.clicked.connect(self.call_C04)
 
         self.child.btn_D01.clicked.connect(self.call_D01)
         
@@ -66,7 +68,18 @@ class w000(QMainWindow):
     def call_C02(self):
         pass
         self.cwC02 = Tl_C02.WC02()
-        self.cwC02.show()                    
+        self.cwC02.show()      
+
+    #调出 倒计时 所在的 PY
+    def call_C03(self):
+        pass
+        Tl_C03.main()      
+
+    #调出 倒计时(QT5) 所在的 PY
+    def call_C04(self):
+        pass
+        self.cwC04 = Tl_C04.Window()
+        self.cwC04.show()               
 
     #调出数据库 TableGrid 的 PY
     def call_D01(self):

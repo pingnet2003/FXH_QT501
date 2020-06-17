@@ -249,9 +249,9 @@
      <widget class="QPushButton" name="btn_C01">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>40</x>
         <y>20</y>
-        <width>111</width>
+        <width>131</width>
         <height>23</height>
        </rect>
       </property>
@@ -278,9 +278,9 @@
      <widget class="QPushButton" name="btn_C02">
       <property name="geometry">
        <rect>
-        <x>61</x>
+        <x>41</x>
         <y>47</y>
-        <width>111</width>
+        <width>131</width>
         <height>23</height>
        </rect>
       </property>
@@ -302,6 +302,64 @@
       </property>
       <property name="text">
        <string>20200616 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_C03">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>74</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200617 加入">20200617 加入</string>
+      </property>
+      <property name="text">
+       <string>C03-倒计时(turtle)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>80</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200617 加入</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_C04">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string extracomment="20200617 加入">20200617 加入</string>
+      </property>
+      <property name="text">
+       <string>C04-倒计时(QT5)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>104</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20200617 加入</string>
       </property>
      </widget>
     </widget>
