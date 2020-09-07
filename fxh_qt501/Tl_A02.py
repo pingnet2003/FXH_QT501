@@ -7,6 +7,8 @@ from PyQt5.QtGui import *
 
 from Ui_qt_A02 import Ui_Frm_youget_video
 
+# 需要安装you-get,安装方法: pip install you-get
+
 
 # 自己建一个mywindows类，QtWidgets.QMainWindow：继承该类方法
 class c_tl_a02(QtWidgets.QMainWindow):

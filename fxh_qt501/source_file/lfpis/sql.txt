@@ -1,0 +1,11 @@
+select * from rb090 where rb090_component='OUTSOLE' and rb090_date_out>=to_date('20190701','yyyymmdd')  and rb090_date_out<to_date('20191001','yyyymmdd')
+
+select * from rb090 where rb090_component='OUTSOLE' and rb090_date_out>=to_date('20191001','yyyymmdd')  and rb090_date_out<to_date('20200101','yyyymmdd')
+
+select * from rb090LOG where rb090_component='OUTSOLE' and rb090_date_out>=to_date('20200101','yyyymmdd')  and rb090_date_out<to_date('20200401','yyyymmdd')
+
+select rb090_date_out-rb090_date_in,A.* from rb090 A where rb090_component='OUTSOLE' and rb090_date_out>=to_date('20200401','yyyymmdd')  and rb090_date_out<to_date('20200701','yyyymmdd')
+
+select * from rb090 where rb090_component='MIDSOLE' and rb090_date_out>=to_date('20200401','yyyymmdd')  and rb090_date_out<to_date('20200701','yyyymmdd')
+
+select Distinct rb090_component from rb090 where rb090_date_out>=to_date('20200401','yyyymmdd')  and rb090_date_out<to_date('20200701','yyyymmdd')     

@@ -11,7 +11,7 @@ from Ui_qt_C02 import Ui_qt_c02
 
 from PIL import ImageGrab  # pip3 install pillow
 import numpy as np    # pip3 install numpy
-import cv2             # pip3 install opencv2
+import cv2             # pip3 install opencv-python
 import datetime
 from pynput import keyboard   # pip3 install pynput
 import threading
